@@ -1,0 +1,11 @@
+BASELINE PERFORMANCE (NO CACHE) - February 27, 2026
+
+Single Product GET (productID=1):
+Request 1: 51.80 ms
+Request 2: 20.52 ms
+Request 3: 19.97 ms
+Request 4: 21.45 ms
+Request 5: 19.97 ms
+Average: 26.74 ms
+
+All Products Scan: 272.64 ms

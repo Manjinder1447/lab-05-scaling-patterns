@@ -1,0 +1,18 @@
+# TEST COMMANDS FOR LAB 5 PART 2
+# API URL: https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev
+
+# Get all products
+curl https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products
+
+# Get specific product
+curl https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products/1
+
+# Test caching (run twice to see hit/miss)
+curl https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products/1
+curl https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products/1
+
+# Create test product
+curl -X POST https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products -H "Content-Type: application/json" -d "{\"productID\":\"test-999\",\"name\":\"Test Product\",\"price\":49.99}"
+
+# Update product
+curl -X POST https://mv3hu6exm3.execute-api.us-east-1.amazonaws.com/dev/products -H "Content-Type: application/json" -d "{\"productID\":\"test-999\",\"name\":\"UPDATED PRODUCT\",\"price\":59.99}"

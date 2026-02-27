@@ -1,0 +1,12 @@
+CACHE INVALIDATION TEST - February 27, 2026
+
+Test Product: test-999
+
+Step 1: POST Create - Success
+Step 2: First GET - 39.05 ms (MISS)
+Step 3: Second GET - 0.02 ms (HIT)
+Step 4: Third GET - 0.02 ms (HIT)
+Step 5: POST Update - Cache invalidated
+Step 6: GET after update - 0.11 ms (HIT)
+
+Note: Update operation needs improvement - data didn't change
