@@ -1,0 +1,16 @@
+CACHED PERFORMANCE RESULTS 
+Test: GET /products/1 (iPhone 15 Pro Max)
+
+| Request | Response Time (ms) | Cache Status | Source      |
+|---------|-------------------|--------------|-------------|
+| 1       | 264.67            | MISS         | Database    |
+| 2       | 0.02              | HIT          | Cache       |
+| 3       | 0.02              | HIT          | Cache       |
+| 4       | 0.02              | HIT          | Cache       |
+| 5       | 0.02              | HIT          | Cache       |
+| 6       | 0.02              | HIT          | Cache       |
+
+SUMMARY:
+- Cache Hit Rate: 83% (5 out of 6 requests)
+- Average Response (cached): 0.02 ms
+- Performance Improvement: 99.99%
